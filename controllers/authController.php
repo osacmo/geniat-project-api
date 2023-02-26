@@ -3,6 +3,8 @@ require('../vendor/autoload.php');
 
 use Firebase\JWT\JWT;
 
+error_reporting(E_ERROR | E_PARSE);
+
 function login($body, $conn)
 {
     $result = $conn->query("SELECT * FROM usuario WHERE correo ='$body->correo'");

@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(E_ERROR | E_PARSE);
+
 function createPost($body, $conn, $id)
 {
     $query = "INSERT INTO publicacion(titulo, descripcion)

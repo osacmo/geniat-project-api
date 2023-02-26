@@ -4,6 +4,8 @@ require('../vendor/autoload.php');
 use Firebase\JWT\JWT;
 use Firebase\JWT\Key;
 
+error_reporting(E_ERROR | E_PARSE);
+
 function validateToken($conn)
 {
     $headers = getallheaders();

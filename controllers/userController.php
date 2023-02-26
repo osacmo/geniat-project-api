@@ -2,6 +2,8 @@
 
 require('../database/config.php');
 
+error_reporting(E_ERROR | E_PARSE);
+
 function createUser($body, $conn)
 {
     $new_pass = password_hash($body->contraseña, PASSWORD_DEFAULT);
